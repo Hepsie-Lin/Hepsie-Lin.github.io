@@ -578,7 +578,7 @@ window.addEventListener('beforeunload', saveNote);
 renderFolders();
 
 // 全局变量存储API Key（实际项目建议用更安全的方式）
-let DEEPSEEK_API_KEY = "key1"; // 替换为您的真实Key
+let DEEPSEEK_API_KEY = "NOTEAI_API_KEY1"; // 替换为您的真实Key
 
 // 打开/关闭AI面板
 document.getElementById('ai-assistant').addEventListener('click', () => {
@@ -625,7 +625,7 @@ const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': '替换为我的Key2' // 替换为您的Key
+        'Authorization': 'NOTEAI_API_KEY2' // 替换为您的Key
       },
       body: JSON.stringify({
         model: "mistralai/mistral-7b-instruct", // 免费模型
